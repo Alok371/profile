@@ -11,11 +11,11 @@ const Navbar = () => {
         <div className='z-10 text-gray-500 flex justify-between items-center max-w-[1280px] mx-auto h-24 px-4 text-l'>
             <h1 className='text-3xl font-bold primary-color ml-4'>Alok Khalkho</h1>
             <ul className='hidden md:flex'>
-                <li className='p-5'>Home</li>
-                <li className='p-5'>Company</li>
-                <li className='p-5'>Resources</li>
-                <li className='p-5'>About</li>
-                <li className='p-5'>Contact</li>
+                <li className='p-5'><a href='#home'>Home</a></li>
+                <li className='p-5'><a href="#about">About</a></li>
+                <li className='p-5'><a href="#projects">Projects</a></li>
+                <li className='p-5'><a href="#education">Education</a></li>
+                <li className='p-5'><a href="#contact">Contact</a></li>
             </ul>
 
             <div onClick={handleNav} className="block md:hidden">
