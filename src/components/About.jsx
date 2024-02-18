@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImg from '../assets/about4.jpeg';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
@@ -9,7 +10,7 @@ const About = () => {
                     <div className='w-[400px] h-full'>
                         <img
                             src={aboutImg} alt=""
-                            className='object-cover  rounded-xl h-[300px] filter grayscale brightness-50'
+                            className='object-cover rounded-xl h-[300px] filter grayscale brightness-50'
                         />
                     </div>
                 </div>
@@ -17,18 +18,20 @@ const About = () => {
                     <div className='p-2'>
                         <div className='text-gray-300 my-3'>
                             <h3 className='text-4xl font-semibold mb-5'>About <span >Me</span></h3>
-                            <p className='text-justify leading-7 w-11/12 mx-auto'>
+                            <motion.p
+                                className='text-justify leading-7 w-11/12 mx-auto'
+                                initial={{ opacity: 0, scale: 0.5, y: 50 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                            >
                                 I am an MCA graduate from NIT Trichy who is enthusiastic about Web Development. I am eager to use my technical skills, problem-solving abilities, and academic achievements to make a positive impact in a forward-thinking organization and start a fulfilling career journey.
-                            </p>
-
+                            </motion.p>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     )
 }
 
-export default About
+export default About;
