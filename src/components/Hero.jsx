@@ -1,16 +1,14 @@
 import React from 'react';
-import profilepic from '../assets/profilepic5.png';
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import profilepic from '../assets/profilePic3.jpg';
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-
     return (
         <div>
             <div className='my-7 sm:my-0 max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center align-center'>
-
-                {/*About me and download CV*/}
+                {/* About me and download CV */}
                 <div className='flex-col my-auto mx-auto'>
                     <p className='md:text-5xl sm:text-4xl text-xl font-bold text-gray-200'>
                         Hi, I am Alok Khalkho
@@ -41,30 +39,32 @@ const Hero = () => {
                         </p>
                     </motion.div>
                     <div className='text-5xl flex justify-start gap-16 my-7 text-purple-600'>
-                        <AiFillLinkedin />
-                        <AiFillGithub />
+                        <a href='https://www.linkedin.com/in/alok-khalkho-753978202/' target='_blank' rel='noopener noreferrer'>
+                            <AiFillLinkedin />
+                        </a>
+                        <a href='https://github.com/Alok371' target='_blank' rel='noopener noreferrer'>
+                            <AiFillGithub />
+                        </a>
+                        <a href='https://www.instagram.com/___al_ok___?igsh=eXR4OHJ5azljejd6' target='_blank' rel='noopener noreferrer'>
+                            <AiFillInstagram />
+                        </a>
                     </div>
                     <div className='relative inline-flex group my-3'>
                         <div className='absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt'>
-
                         </div>
                         <a href='https://drive.google.com/uc?export=download&id=1lErTt3swnwzHTiOhNj7h8wHxfkN3z0Kl' title='Download CV' role="button" className='w-[200px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900' >
                             Download CV
                         </a>
                     </div>
                 </div>
-
-                {/*Profile pic*/}
-                <div className='my-auto'>
-                    <img className='w-[300px] sm:w-[500px] mx-auto h-auto'
-                        src={profilepic}
-                        alt="profile pic"
-                    />
+                {/* Profile pic */}
+                <div class='my-auto'>
+                    <img class='w-full max-w-[300px] sm:max-w-[500px] max-h-[300px] sm:max-h-[500px] mx-auto object-cover rounded-full border-4 border-transparent'
+                        src={profilepic} alt='profile pic' />
                 </div>
-
             </div>
         </div>
-    )
+    );
 }
 
 export default Hero;

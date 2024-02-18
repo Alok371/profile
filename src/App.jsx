@@ -8,22 +8,28 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
+import Skills from './components/Skills';
 
 function App() {
+  const isMobile = window.innerWidth <= 768; // Define your own breakpoint here
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <AnimateWhenVisible>
+      <AnimateWhenVisible shouldAnimate={!isMobile}>
         <About />
       </AnimateWhenVisible>
-      <AnimateWhenVisible>
+      <AnimateWhenVisible shouldAnimate={!isMobile}>
         <Project />
       </AnimateWhenVisible>
-      <AnimateWhenVisible>
+      <AnimateWhenVisible shouldAnimate={!isMobile}>
+        <Skills />
+      </AnimateWhenVisible>
+      <AnimateWhenVisible shouldAnimate={!isMobile}>
         <Education />
       </AnimateWhenVisible>
-      <AnimateWhenVisible>
+      <AnimateWhenVisible shouldAnimate={!isMobile}>
         <Contact />
       </AnimateWhenVisible>
       <Footer />
@@ -31,17 +37,17 @@ function App() {
   );
 }
 
-const AnimateWhenVisible = ({ children }) => {
+const AnimateWhenVisible = ({ children, shouldAnimate }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.2,
   });
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+      initial={shouldAnimate ? { opacity: 0, y: 50 } : null}
+      animate={shouldAnimate ? { opacity: inView ? 1 : 0, y: inView ? 0 : 50 } : null}
       transition={{ duration: 0.5 }}
     >
       {children}
