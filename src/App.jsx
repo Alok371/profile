@@ -9,6 +9,8 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
 import Skills from './components/Skills';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+
 
 function App() {
   const isMobile = window.innerWidth <= 768; // Define your own breakpoint here
@@ -21,7 +23,9 @@ function App() {
         <About />
       </AnimateWhenVisible>
       <AnimateWhenVisible shouldAnimate={!isMobile}>
-        <Project />
+        <Router>
+          <Project />
+        </Router>
       </AnimateWhenVisible>
       <AnimateWhenVisible shouldAnimate={!isMobile}>
         <Skills />
