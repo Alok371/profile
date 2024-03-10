@@ -5,7 +5,7 @@ const Education = () => {
     return (
         <div id='education' className='py-16 bg-gray-900'>
             <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
-                <h1 className='text-4xl sm:text-5xl text-white text-center mb-12'>My <span>Education</span></h1>
+                <h1 className='text-4xl sm:text-5xl text-white text-center mb-12'><span>Education</span></h1>
                 <div className='space-y-12'>
                     <motion.div
                         className='bg-gray-800 rounded-xl p-6 shadow-lg'

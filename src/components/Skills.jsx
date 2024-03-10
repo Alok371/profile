@@ -17,7 +17,7 @@ const Skills = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <h1 className='text-4xl sm:text-5xl text-white text-center mb-8'>My <span>Skills</span></h1>
+            <h1 className='text-4xl sm:text-5xl text-white text-center mb-8'><span>Skills</span></h1>
             <div className="grid grid-cols-4 gap-8 md:gap-20">
                 <div className="flex flex-col items-center justify-center">
                     <img src={htmlLogo} alt="HTML Logo" className="w-24 h-24 md:w-32 md:h-32 mb-2" />

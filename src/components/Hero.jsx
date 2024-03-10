@@ -52,13 +52,13 @@ const Hero = () => {
                     <div className='relative inline-flex group my-3 animate-bounce'>
                         <div className='absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt'>
                         </div>
-                        <a href='https://drive.google.com/uc?export=download&id=1lErTt3swnwzHTiOhNj7h8wHxfkN3z0Kl' title='Download CV' role="button" className='w-[200px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900' >
+                        <a href='https://drive.google.com/uc?export=download&id=10LEA_LrEbQSHbYh8HzWeQJy2CDGlEdbX' title='Download CV' role="button" className='w-[200px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900' >
                             Download CV
                         </a>
                     </div>
                 </div>
                 {/* Profile pic */}
-                <div class='my-auto'>
+                <div class='my-auto border-solid border-4 border-purple-500 rounded-full'>
                     <img class='w-full max-w-[300px] sm:max-w-[500px] max-h-[300px] sm:max-h-[500px] mx-auto object-cover rounded-full border-4 border-transparent'
                         src={profilepic} alt='profile pic' />
                 </div>

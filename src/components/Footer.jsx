@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='mt-12 bg-gray-900 text-white py-8'>
             <div className='max-w-4xl mx-auto flex flex-col items-center text-center'>
                 <p className='my-5 text-gray-500'>
-                    Thank you for visiting my portfolio! Connect with me on social media:
+                    Thank you for visiting! Let's Connect on social media:
                 </p>
                 <div className='flex justify-center gap-4'>
                     <a href='https://github.com/Alok371' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400'>

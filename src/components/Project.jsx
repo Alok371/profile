@@ -20,7 +20,7 @@ const Project = () => {
         <div id='projects' className='py-6 max-w-[1200px] mx-auto flex justify-center'>
             <div className='mx-auto px-4 md:px-8'>
                 <div className='mb-8'>
-                    <h2 className='text-3xl lg:text-4xl text-white font-bold mb-2'>My <span className='text-primary-color'>Projects</span></h2>
+                    <h2 className='text-3xl lg:text-4xl text-white font-bold mb-2'><span className='text-primary-color'>Projects</span></h2>
                     <p className='text-gray-400'>Check out some of my projects below.</p>
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8'>
