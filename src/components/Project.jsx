@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import proj1 from '../assets/EstateEaseUp.jpg';
+import proj2 from '../assets/EstateEaseUp.jpg';
+import proj1 from '../assets/FoodGo.svg'
 import proj3 from '../assets/medicineDelivery.jpg';
 import proj4 from '../assets/groupChat.svg';
 import { motion } from 'framer-motion';
@@ -61,7 +62,8 @@ const Project = () => {
 }
 
 const projects = [
-    { title: 'EstateEaseUp', image: proj1, description: 'EstateEaseUp is a user-friendly real estate website that simplifies property transactions by allowing users to buy, rent, or list properties with direct communication. Sellers can effortlessly upload property details and images for efficient listing creation, while advanced search options and a user-centric profile section enhance the user experience. Developed using HTML, CSS, Tailwind CSS, JavaScript, ReactJS, Node.js, Express.js,Firebase and MongoDB EstateEaseUp ensures a responsive and secure platform for property transactions.', link: 'https://estateeaseup.onrender.com/' },
+    { title: 'FoodGo', image: proj1, description: 'Developed a full-stack food delivery platform allowing customers to browse restaurant menus, place orders, and track deliveries in real-time. It also includes a dashboard for restaurant owners to manage orders and menus. Implemented user authentication and protected routes for security, with real-time order updates. •	Technologies: Node.js, Express.js, MongoDB, React.js, TypeScript, React Query, Auth0, Tailwind CSS, shadcn/ui, Cloudinary', link: 'https://foodgo-frontend.onrender.com' },
+    { title: 'EstateEaseUp', image: proj2, description: 'EstateEaseUp is a user-friendly real estate website that simplifies property transactions by allowing users to buy, rent, or list properties with direct communication. Sellers can effortlessly upload property details and images for efficient listing creation, while advanced search options and a user-centric profile section enhance the user experience. Developed using HTML, CSS, Tailwind CSS, JavaScript, ReactJS, Node.js, Express.js,Firebase and MongoDB EstateEaseUp ensures a responsive and secure platform for property transactions.', link: 'https://estateeaseup.onrender.com/' },
     { title: 'DoorMed', image: proj3, description: 'An online pharmacy platform that enables users to order prescription medications and healthcare products from the comfort of their homes. Includes features such as medication reminders and virtual consultations.', link: 'https://github.com/Alok371/DoorMed/tree/master' },
     { title: 'iChat', image: proj4, description: 'A messaging application that allows users to communicate with each other in real-time through text messages, voice calls, and video calls. Supports group chats and multimedia sharing.', link: 'https://github.com/Alok371/iChat' }
 ];
