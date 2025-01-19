@@ -20,8 +20,6 @@ const Hero = () => {
                                 1500,
                                 "Fresher",
                                 1500,
-                                "Job Seeker",
-                                1500,
                                 "React Developer at VoyEase",
                                 1500,
                             ]}
